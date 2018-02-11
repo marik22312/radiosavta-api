@@ -2,11 +2,12 @@ const express = require('express');
 const icy = require('icy');
 
 const app = express();
+const port = process.env.PORT || 4800
 
-app.set('port', process.env.PORT || 4800)
+app.set('port', port)
 
 app.listen(4800, () => {
-  console.log('Server on port 4800');
+  console.log('Server on port', port);
 });
 // URL to a known Icecast stream
 var songName;
