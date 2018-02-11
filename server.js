@@ -3,6 +3,8 @@ const icy = require('icy');
 
 const app = express();
 
+app.set('port', process.env.PORT || 4800)
+
 app.listen(4800, () => {
   console.log('Server on port 4800');
 });
