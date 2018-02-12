@@ -18,7 +18,7 @@ icy.get(url, function (res) {
   res.on('metadata', function (metadata) {
     var parsed = icy.parse(metadata);
     console.error(parsed);
-    songName = parsed;
+    parsed ? songName = parsed : songName = 'Sorry There\'s Something Wrong...';
   });
   res.resume();
 });
