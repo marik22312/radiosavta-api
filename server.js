@@ -28,3 +28,8 @@ app.get('/', (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
   res.send(songName);
 });
+app.get('/stats', (req, res) => {
+  console.log('get /stats');
+  res.set('Access-Control-Allow-Origin', '*');
+  res.send(songName);
+});
