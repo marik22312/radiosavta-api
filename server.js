@@ -3,7 +3,7 @@ const icy = require('icy');
 
 const app = express();
 const port = process.env.PORT || 4800;
-const url = 'http://cp12.cdnwz.net/savta';
+const url = 'http://radiosavta.cdnwz.net:9005/savta_live';
 
 app.listen(port, () => {
   console.log('Server on port', port);
